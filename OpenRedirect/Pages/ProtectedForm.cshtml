@@ -1,0 +1,15 @@
+﻿@page
+@model OpenRedirect.ProtectedFormModel
+@{
+    ViewData["Title"] = "ProtectedForm";
+}
+
+<h1>Protected Form</h1>
+
+<form method="post">
+    Name:
+    <input asp-for="LoginModel.username" />
+    Password:
+    <input asp-for="LoginModel.password" />
+    <input type="submit" value="Send" />
+</form>
